@@ -10,7 +10,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "SET NODE_ENV=test&& mocha --require @babel/register --require ignore-styles src/test/*.test.js",
+    "test:watch": "npm test -- -w",
+    "testOld": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -26,12 +28,14 @@
     "@babel/core": "^7.4.3",
     "@babel/plugin-transform-modules-commonjs": "^7.4.3",
     "@babel/register": "^7.4.0",
+    "babel-plugin-inline-react-svg": "^1.1.0",
     "babel-preset-react-app-babel-7": "^4.0.2-0",
     "chai": "^4.2.0",
     "chai-enzyme": "^1.0.0-beta.1",
     "cheerio": "^1.0.0-rc.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "ignore-styles": "^5.0.1",
     "mocha": "^6.1.3"
   }
 }
