@@ -21,5 +21,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "babel-preset-react-app-babel-7": "^4.0.2-0",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "cheerio": "^1.0.0-rc.3",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "mocha": "^6.1.3"
+  }
 }
